@@ -1,4 +1,4 @@
-package com.share;
+package com.helloRN;
 
 import android.app.Application;
 

@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React Native!"
 
-@interface shareTests : XCTestCase
+@interface helloRNTests : XCTestCase
 
 @end
 
-@implementation shareTests
+@implementation helloRNTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
@@ -35,7 +35,7 @@
 
 - (void)testRendersWelcomeScreen
 {
-  UIViewController *vc = [[[RCTSharedApplication() delegate] window] rootViewController];
+  UIViewController *vc = [[[RCThelloRNdApplication() delegate] window] rootViewController];
   NSDate *date = [NSDate dateWithTimeIntervalSinceNow:TIMEOUT_SECONDS];
   BOOL foundElement = NO;
 
