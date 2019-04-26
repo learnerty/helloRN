@@ -6,13 +6,17 @@
  */
 
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
 export default class Drawer extends Component {
   render() {
+    const { navigation } = this.props
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Drawer</Text>
+        <Text style={styles.welcome}>home</Text>
+        <Button title="打开抽屉" onPress={() => navigation.openDrawer()}></Button>
+        <Button title="关闭抽屉" onPress={() => navigation.closeDrawer()}></Button>
+        <Button title="切换抽屉" onPress={() => navigation.toggleDrawer()}></Button>
       </View>
     );
   }
